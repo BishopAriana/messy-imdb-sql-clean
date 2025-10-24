@@ -63,7 +63,7 @@ Things I can still do
 * Fix the original_title column
 * See if I can add in those 2 missing release years (rows 6 and 45)
 * See if I can get any of the missing durations and include what the time unit is for certain (still think it's minutes)
-* Check if there's an rating in the current rating system for the row set to "Approved" (row 13)
+* Check if there's any rating in the current rating system for the row set to "Approved" (row 13)
 * See if director2 needs to be renamed to another title (like 'Writer')
 * Convert the the last 3 columns to numeric types
 * Check the income number for row 8 (the 576 number is way too low to be correct)
