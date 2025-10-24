@@ -37,6 +37,8 @@ For the first round of cleaning:
 * I intially changed the '.' in votes to ',' for normal numeric formating, but I removed them instead so it can be prepped for numeric conversion.
 * I cleaned up the score column to prep for conversion to a decimal type with 1 place of precision.
 
+---
+
 ### The clean1 Table (initial cleaning)
 | Column Name      | Data Type     | Description                                                                                   |
 |------------------|---------------|-----------------------------------------------------------------------------------------------|
@@ -54,6 +56,8 @@ For the first round of cleaning:
 | income           | text          | Total Box Office revenue (money from ticket sales during theatrical release)                  |
 | votes            | text          | Not entirely sure, but possibly related to user stars/reviews                                 |
 | score            | text          | The movies average total star rating (out of 10 stars)                                        |
+
+---
 
 Things I can still do
 * Fix the original_title column
