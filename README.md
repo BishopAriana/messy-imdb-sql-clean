@@ -1,5 +1,5 @@
 # messy-imdb-sql-clean
-Cleaning a messy imdb dataset from Kaggle with only 101 rows.
+Cleaning a messy imdb dataset from Kaggle with only 101 rows: https://www.kaggle.com/datasets/davidfuenteherraiz/messy-imdb-dataset
 
 I only removed a blank row from the original CSV, so that the data would be ingested into the PostgreSQL database. I imported everything as a text type to start.
 
