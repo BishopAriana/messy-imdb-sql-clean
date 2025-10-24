@@ -10,6 +10,7 @@ For the first round of cleaning I:
 * release_year had multiple formats of full dates. I pulled out the years when I was certain what the year was and left the row NULL where it's ambiguous. There are only 2 NULL values that can be reconcilled with the IMDB site later.
 * There are between 1 and 3 genres per film, so I split these into 3 separate columns. Any empty spaces have been set as NULL. Originally, I had them set to N/A, but switched to NULL for consistency with the NULLS in the duration column.
 * For the duration, I standardized all non-number values to NULL, and removed any characters in any numeric rows.
+* I standardized the country column to 2 character country codes or NULL.
 * For the content_rating column I standardized "Unrated", "Not Rated", AND "#N/A" to "Unrated", and I left "Approved" alone since it is an older rating system option.
 * I noticed that there were at most 2 names in the director column, so I split that into 2 columns and set the blanks to NULL.
 * I removed the character o from a number in the income row and removed all of the non-numeric characters to prep for conversion to a numeric type. Line 8 still seems off at only 576.
@@ -23,4 +24,5 @@ Things I can still do
 * Check if there's an rating in the current rating system for the row set to "Approved" (row 13)
 * See if director2 needs to be renamed to another title
 * Convert the the last 3 columns to numeric types
-* Check the income number for row 8 
+* Check the income number for row 8
+* I can also see if there's a way for me to refactor any of the case statements/regular expressions
