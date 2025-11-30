@@ -1,4 +1,4 @@
-# messy-imdb-sql-clean
+# Cleaning Messy IMDB Dataset using SQL
 Cleaning a messy imdb dataset from Kaggle with only 101 rows: https://www.kaggle.com/datasets/davidfuenteherraiz/messy-imdb-dataset
 
 ---
