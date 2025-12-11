@@ -68,3 +68,29 @@ Things I can still do
 * Convert the the last 3 columns to numeric types
 * Check the income number for row 8 (the 576 number is way too low to be correct)
 * I can also see if there's a way for me to refactor any of the case statements/regular expressions
+* Split the table into into 3 tables: Movies, Genres, and Directors with a One-to-Many relationship between the Movies table (One) and the Genres and Directors tables (Many)
+
+### Movies Table
+| Column Name      | Data Type     | Description                                                                                   |
+|------------------|---------------|-----------------------------------------------------------------------------------------------|
+| imdb_title [PK]  | text          | Unique ID for each movie                                                                      |
+| original_title   | text          | The full title of the movie                                                                   |
+| release_year     | text          | The year in which the movie came out                                                          |
+| duration         | text          | The length of the movie in minutes                                                            |
+| country          | text          | The movie's country of origin                                                                 |
+| content_rating   | text          | The movie's MPA (Motion Picture Rating)                                                       |
+| income           | text          | Total Box Office revenue (money from ticket sales during theatrical release)                  |
+| votes            | text          | Not entirely sure, but possibly related to user stars/reviews                                 |
+| score            | text          | The movies average total star rating (out of 10 stars)                                        |
+
+### Genres Table
+| Column Name      | Data Type     | Description                                                                                   |
+|------------------|---------------|-----------------------------------------------------------------------------------------------|
+| imdb_title [FK]  | text          | Unique ID for each movie, Foreign Key on Movies table Primary Key                             |
+| genre            | text          | A single genre that the movie can have                                                        |
+
+### Directors Table
+| Column Name      | Data Type     | Description                                                                                   |
+|------------------|---------------|-----------------------------------------------------------------------------------------------|
+| imdb_title [FK]  | text          | Unique ID for each movie, Foreign Key on Movies table Primary Key                             |
+| director         | text          | A single Director that the movie can have                                                     |
